@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "396807048787",
+    "firebase_url": "https://watsinthebox-d368f.firebaseio.com",
+    "project_id": "watsinthebox-d368f",
+    "storage_bucket": "watsinthebox-d368f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396807048787:android:84b59f199134a279",
+        "android_client_info": {
+          "package_name": "com.mzhovnach.whatsinthebox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396807048787-irn118gl3enjaqutgctv9cs4vjubimdg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyJ3-M43FA2VzjSWeQjV5iT5Yka-0m8VA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
