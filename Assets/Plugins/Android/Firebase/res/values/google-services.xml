@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id" xmlns:tools="http://schemas.android.com/tools">
+  <string name="firebase_database_url" translatable="false">https://watsinthebox-d368f.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">396807048787</string>
+  <string name="google_storage_bucket" translatable="false">watsinthebox-d368f.appspot.com</string>
+  <string name="project_id" translatable="false">watsinthebox-d368f</string>
+  <string name="google_api_key" translatable="false">AIzaSyCyJ3-M43FA2VzjSWeQjV5iT5Yka-0m8VA</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCyJ3-M43FA2VzjSWeQjV5iT5Yka-0m8VA</string>
+  <string name="google_app_id" translatable="false">1:396807048787:android:84b59f199134a279</string>
+  <string name="default_web_client_id" translatable="false">396807048787-irn118gl3enjaqutgctv9cs4vjubimdg.apps.googleusercontent.com</string>
+</resources>

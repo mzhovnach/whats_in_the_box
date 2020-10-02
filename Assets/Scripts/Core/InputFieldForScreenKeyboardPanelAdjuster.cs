@@ -22,7 +22,10 @@ public class InputFieldForScreenKeyboardPanelAdjuster : MonoBehaviour
 
     public void OnDestroy()
     {
-        AppManager.Instance.KeyboardAdjuster = null;
+        if (AppManager.Instance != null)
+        {
+            AppManager.Instance.KeyboardAdjuster = null;
+        }
     }
 
     public void SetActiveInputField(InputField field)

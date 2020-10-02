@@ -17,26 +17,23 @@ public class Backend : MonoBehaviour
     public AuthHelper Authentification;
     public bool Initialized;
 
-	public void InitializeFirebase()
+	public async System.Threading.Tasks.Task InitializeFirebase()
     {
         Initialized = false;
-        Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task => {
-            var dependencyStatus = task.Result;
-            if (dependencyStatus == Firebase.DependencyStatus.Available)
-            {
-                Debug.Log("InitializeFirebase: Available!");
-                // Set a flag here indiciating that Firebase is ready to use by your
-                // application.
-                LateInitialize(); 
-                Initialized = true;
-            }
-            else
-            {
-                UnityEngine.Debug.LogError(System.String.Format(
-                  "Could not resolve all Firebase dependencies: {0}", dependencyStatus));
-                // Firebase Unity SDK is not safe to use here.
-            }
-        });
+        Firebase.DependencyStatus dependencyStatus = await Firebase.FirebaseApp.CheckAndFixDependenciesAsync();
+        if (dependencyStatus == Firebase.DependencyStatus.Available)
+        {
+            Debug.Log("InitializeFirebase: Available!");
+            // Set a flag here indiciating that Firebase is ready to use by your
+            // application.
+            LateInitialize();
+            Initialized = true;
+        }
+        else
+        {
+            UnityEngine.Debug.LogError(System.String.Format("Could not resolve all Firebase dependencies: {0}", dependencyStatus));
+            // Firebase Unity SDK is not safe to use here.
+        }
     }
 
     private void LateInitialize()
